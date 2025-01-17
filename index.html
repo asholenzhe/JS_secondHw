@@ -21,6 +21,7 @@
         }
 
         .error {
+            display: none;
             color: red;
         }
     </style>
@@ -35,10 +36,10 @@
     <input type="text" id="group-input">
 </form>
 
-<!--<div class="error">Все поля обязательны к заполнению</div>-->
+<div class="error">Все поля обязательны к заполнению</div>
 
 <br>
-<button id="add-btn">Добавить</button>
+<button id="add-btn" >Добавить</button>
 <button id="clear-btn">Очистить все</button>
 
 <table id="data-table">
@@ -50,13 +51,13 @@
     </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>Иванов Иван Иванович</td>
-            <td>333-222-08</td>
-            <td>
-                <button>X</button>
-            </td>
-        </tr>
+    <tr>
+        <td>Иванов Иван Иванович</td>
+        <td>333-222-08</td>
+        <td>
+            <button class="delete-btn">X</button>
+        </td>
+    </tr>
     </tbody>
 </table>
 
